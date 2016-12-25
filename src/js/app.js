@@ -7,11 +7,11 @@ import React from 'react';
 //react virtual dom
 import ReactDOM from 'react-dom';
 //
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 //import just the create store function from the module redux
-import {createStore, applyMiddleware} from 'redux';
-import {Router, Route, IndexRoute, hashHistory} from 'react-router';
-import {syncHistoryWithStore, routerMiddleware} from 'react-router-redux';
+import { createStore, applyMiddleware } from 'redux';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { syncHistoryWithStore, routerMiddleware } from 'react-router-redux';
 import ReduxThunk from 'redux-thunk';
 
 console.log('hello worlds');

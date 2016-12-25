@@ -84,41 +84,41 @@ $ npm run dev
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-	devServer: {
+  devServer: {
     inline: true,
-  	contentBase: './dist',
-  	port: 3000
+    contentBase: './dist',
+    port: 3000
   },
-	entry: './src/js/app.js',
+  entry: './src/js/app.js',
   output: {
 
-      path: './dist',
-			filename: 'js/app.bundle.js'
+    path: './dist',
+    filename: 'js/app.bundle.js'
 
   },
   module: {
-		loaders: [
-			{
+    loaders: [
+      {
 
-      	test: /\.js$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-      	loaders: ['babel']
+        loaders: ['babel']
 
       },
-			{
+      {
 
-				test: /\.scss$/,
-				loader: ['style-loader', 'css-loader', 'sass-loader']
+        test: /\.scss$/,
+        loader: ['style-loader', 'css-loader', 'sass-loader']
 
-			}
+      }
     ]
   },
   plugins: [
-  	new CopyWebpackPlugin([
-    	{
-				from: 'src/index.html' 
-			}
-		])
+    new CopyWebpackPlugin([
+      {
+        from: 'src/index.html'
+      }
+    ])
   ]
 };
 ```
