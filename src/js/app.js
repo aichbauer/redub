@@ -14,8 +14,10 @@ import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import {syncHistoryWithStore, routerMiddleware} from 'react-router-redux';
 import ReduxThunk from 'redux-thunk';
 
+console.log('hello worlds');
 
-const routingMiddleware = routerMiddleware(hashHistory);
+
+/*const routingMiddleware = routerMiddleware(hashHistory);
 //the store us storing all the data for the application
 const store = createStore(allReducers, applyMiddleware(ReduxThunk, routingMiddleware));
 //const store = configureStore(allReducers);
@@ -27,8 +29,8 @@ const history = syncHistoryWithStore(hashHistory, store);
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <div>hello world</div>
     </Router>
   </Provider>,
   document.getElementById('root')
-);
+);*/
+
