@@ -29,6 +29,7 @@ $ npm run dev
 
 ```json
 "dependencies": {
+
     "axios": "^0.15.3",
     "babel-polyfill": "^6.20.0",
     "react": "^15.4.1",
@@ -38,6 +39,7 @@ $ npm run dev
     "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0"
+    
   }
 ```
 
@@ -57,6 +59,7 @@ $ npm run dev
 
 ```json
   "devDependencies": {
+
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
@@ -68,6 +71,7 @@ $ npm run dev
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
+
   }
 ```
 
@@ -83,11 +87,15 @@ $ npm run dev
 ```js
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
+
 module.exports = {
+
   devServer: {
+
     inline: true,
     contentBase: './dist',
     port: 3000
+
   },
   entry: './src/js/app.js',
   output: {
@@ -97,7 +105,9 @@ module.exports = {
 
   },
   module: {
+
     loaders: [
+
       {
 
         test: /\.js$/,
@@ -111,14 +121,23 @@ module.exports = {
         loader: ['style-loader', 'css-loader', 'sass-loader']
 
       }
+
     ]
+
   },
   plugins: [
+
     new CopyWebpackPlugin([
+
       {
+
         from: 'src/index.html'
+
       }
+
     ])
+
   ]
+
 };
 ```

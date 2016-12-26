@@ -1,10 +1,14 @@
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
+
 module.exports = {
+
   devServer: {
+
     inline: true,
     contentBase: './dist',
     port: 3000
+
   },
   entry: './src/js/app.js',
   output: {
@@ -14,7 +18,9 @@ module.exports = {
 
   },
   module: {
+
     loaders: [
+
       {
 
         test: /\.js$/,
@@ -28,13 +34,22 @@ module.exports = {
         loader: ['style-loader', 'css-loader', 'sass-loader']
 
       }
+
     ]
+
   },
   plugins: [
+
     new CopyWebpackPlugin([
+
       {
+
         from: 'src/index.html'
+
       }
+
     ])
+
   ]
+
 };
