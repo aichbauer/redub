@@ -1,5 +1,11 @@
-import {hashHistory} from 'react-router';
+import { hashHistory } from 'react-router';
 import axios from 'axios';
+import { 
+
+  BASE_API_URL, 
+  LOGIN_URL 
+
+} from '../../../config/apiRoutes';
 
 
 /*****************************************
@@ -58,7 +64,7 @@ export const login = (creds) => {
 
     return dispatch => {
 
-      axios.post('http://localhost:1337/api/login', {
+      axios.post(BASE_API_URL+LOGIN_URL, {
 
         headers: {
 

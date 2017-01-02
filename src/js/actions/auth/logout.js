@@ -1,4 +1,4 @@
-import {hashHistory} from 'react-router';
+import { hashHistory } from 'react-router';
 import axios from 'axios';
 
 

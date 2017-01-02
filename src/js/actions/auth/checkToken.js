@@ -1,6 +1,11 @@
-import {hashHistory} from 'react-router';
+import { hashHistory } from 'react-router';
 import axios from 'axios';
+import { 
 
+  BASE_API_URL, 
+  VALID_TOKEN_URL 
+
+} from '../../../config/apiRoutes';
 
 /*****************************************
  ***
@@ -41,7 +46,7 @@ export const isAuthorized = () => {
 
     return dispatch => {
 
-      axios.post('http://localhost:1337/api/isvalid', {
+      axios.post(BASE_API_URL+VALID_TOKEN_URL, {
 
         headers: {
 
