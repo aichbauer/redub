@@ -1,6 +1,5 @@
 # Redub
-#### a react redux boilerplate
-# not ready for use
+#### a react *REDU*x *B*oilerplate
 
 ## install & use
 > cd into root directory
@@ -11,20 +10,88 @@ $ npm install
 ```shell
 $ npm run dev
 ```
+> run this for serving the index.html and the bundle.js on localhost:3000
+```shell
+$ npm run start
+```
 
+## Folder Structure
+```
+.
++-- src
+|   +-- config
+|   |
+|   +-- js
+|   |   +-- actions
+|   |   +-- components
+|   |   +-- reducers
+|   |   +-- views
+|   |   app.js
+|   |
+|   +-- scss
+|   |
+|   index.html
+|
+.babel.rc
+.gitignore
+package.json
+readme.md
+webpack.config.js
+
+```
+
+## src directory
+
+Inside here is the code for the complete redux application.
+
+It holdes the following files & folders:
+* **config:**     for now it only holdes the configuration for the API routes
+* **js:**         basically is the redux application
+* **scss:**       holdes the stylesheets for the application
+* **index.html:** is the only html file you need
+
+## config directory
+
+Inside here all the configurations are set.
+
+It holds the following files & folders:
+* **apiRoutes.js:** this file configures the url-path to the api
+
+## js directory
+
+Inside here is all the javascript code for the redux application.
+
+It holds the following files & folders:
+* **actions:** the complete logic of the redux application
+* **components:** the *intelligent* part of the application that is being displayed to the user
+* **reducers:** the complete statemanagement for the redux application
+* **views:** the *dumb* part of the application that is beeing displayed to the user
+* **app.js:** the entrypoint for the application
+
+## scss directory
+
+Inside here is all the scss code for the redux application.
+
+It holdes the following files & folders:
+* **style.scss:** the scss code for the redux application
+
+## index.html
+
+This is the only html file you need for the redux application.
+It holds a div with an id 'root' (here will the application render) and a script with the src 'js/bundle.js' which is the webpacked js code for the redux application.
 
 
 ## Dependencies
 
-* react: core-dependency, library for building user interfaces
-* react-dom: core-dependency, package for working with the DOM
-* react-redux: core-dependency, official React bindings for Redux
-* redux: core-dependency, predictable state container for javascript apps
-* axios: promise based HTTP client for the browser and node.js
-* babel-polyfill: for backwards compatibility, so that ES2015 APIs are available in older browsers
-* react-router: routing library for react
-* react-redux-router: ruthlessly simple bindings to keep react-router and redux in sync
-* redux-thunk: the thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met
+* **axios:** promise based HTTP client for the browser and node.js
+* **babel-polyfill:** for backwards compatibility, so that ES2015 APIs are available in older browsers
+* **react:** library for building user interfaces
+* **react-dom:** package for working with the DOM
+* **react-redux:** official React bindings for Redux
+* **react-router:** routing library for react
+* **react-redux-router:** ruthlessly simple bindings to keep react-router and redux in sync
+* **redux:** predictable state container for javascript apps
+* **redux-thunk:** the thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met
 
 
 ```json
@@ -39,23 +106,23 @@ $ npm run dev
     "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0"
-    
-  }
+
+  },
 ```
 
 ## Developer Dependencies
 
-* babel-core: babel compiler, to use es6 and jsx
-* babel-loader: babel loader module for webpack, depends on babel-core
-* babel-preset-es2015: babel preset for all es2015 plugins
-* babel-preset-react: babel preset for all React plugins
-* copy-webpack-plugin: copy files and directories in webpack
-* css-loader: css loader module for webpack
-* node-sass: is nessacary for sass-loder
-* sass-loader: sass loader module for webpack, depends on node-sass
-* style-loader: style loader module for webpack
-* webpack: Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jade, coffee, css, less, ... and your custom stuff.
-* webpack-dev-server: serves a webpack app, updates the browser on changes
+* **babel-core:** babel compiler, to use es6 and jsx
+* **babel-loader:** babel loader module for webpack, depends on babel-core
+* **babel-preset-es2015:** babel preset for all es2015 plugins
+* **babel-preset-react:** babel preset for all React plugins
+* **copy-webpack-plugin:** copy files and directories in webpack
+* **css-loader:** css loader module for webpack
+* **node-sass:** is nessacary for sass-loder
+* **sass-loader:** sass loader module for webpack, depends on node-sass
+* **style-loader:** style loader module for webpack
+* **webpack:** Packs CommonJs/AMD modules for the browser. Allows to split the codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jade, coffee, css, less, ... and the custom stuff.
+* **webpack-dev-server:** serves a webpack app, updates the browser on changes
 
 ```json
   "devDependencies": {
