@@ -47,7 +47,7 @@ export default function auth(state = {
         user: action.creds
 
       });
-
+      
 
     case LOGIN_SUCCESS:
 

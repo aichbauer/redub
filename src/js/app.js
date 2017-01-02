@@ -5,9 +5,26 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import { syncHistoryWithStore, routerMiddleware } from 'react-router-redux';
+import { 
+  
+  createStore, 
+  applyMiddleware 
+
+} from 'redux';
+import { 
+
+  Router, 
+  Route, 
+  IndexRoute, 
+  hashHistory 
+
+} from 'react-router';
+import { 
+  
+  syncHistoryWithStore, 
+  routerMiddleware 
+
+} from 'react-router-redux';
 import ReduxThunk from 'redux-thunk';
 
 import AppPrivate from './components/wrapper/appPrivate';
