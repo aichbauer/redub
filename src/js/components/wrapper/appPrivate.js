@@ -1,8 +1,13 @@
-import React, {Component, PropTypes} from 'react';
-import {bindActionCreators} from 'redux';
-import {routerActions} from 'react-router-redux'
-import {connect} from 'react-redux';
-import {isAuthorized} from '../../actions/auth/checkToken';
+import React, { 
+  
+  Component, 
+  PropTypes 
+
+} from 'react';
+import { bindActionCreators } from 'redux';
+import { routerActions } from 'react-router-redux'
+import { connect } from 'react-redux';
+import { isAuthorized } from '../../actions/auth/checkToken';
 
 require('../../../scss/style.scss');
 
