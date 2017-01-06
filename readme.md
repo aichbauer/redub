@@ -24,6 +24,7 @@ $ npm run start
 |   +-- js
 |   |   +-- actions
 |   |   +-- components
+|   |   +-- conainers
 |   |   +-- reducers
 |   |   +-- views
 |   |   app.js
