@@ -63,9 +63,10 @@ Inside here is all the javascript code for the redux application.
 
 It holds the following files & folders:
 * **actions:** the complete logic of the redux application
-* **components:** the *intelligent* part of the application that is being displayed to the user
+* **components:** the *dumb* just presentational components of the application (rarely have a state)
+* **conainers:** the *intelligent* conainer components (often statefull components)
 * **reducers:** the complete statemanagement for the redux application
-* **views:** the *dumb* part of the application that is beeing displayed to the user
+* **views:** the different views that are displayed to the user. Can consist of multiple components and/or containers
 * **app.js:** the entrypoint for the application
 
 ## scss directory
