@@ -27,7 +27,7 @@ import {
 } from 'react-router-redux';
 import ReduxThunk from 'redux-thunk';
 
-import AppPrivate from './components/wrapper/appPrivate';
+
 import App from './components/wrapper/app';
 
 
@@ -40,10 +40,9 @@ ReactDOM.render(
 
   <Provider store={store}>
     <Router history={history}>
-    <Route path="/" component={App}>
-    </Route>
-    <Route path="/appprivate" component={AppPrivate}>
-    </Route>
+      <Route path="/" component={App}>
+      
+      </Route>
     </Router>
   </Provider>,
 
