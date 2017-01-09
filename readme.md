@@ -1,6 +1,24 @@
 # Redub
 #### a react *REDU*x *B*oilerplate
 
+# recommended usage
+
+with `redub-cli`
+
+```shell
+# installation
+$ npm i -g redub-cli
+
+# create anew project
+$ redub new testProject
+
+# generate a new component
+$ redub generate comp myNewComponent
+```
+
+
+Documentation for redub-cli [click here](https://github.com/rudolfsonjunior/redub-cli/readme.md)
+
 ## install & use
 > cd into root directory
 ```shell
