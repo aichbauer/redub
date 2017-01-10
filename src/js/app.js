@@ -26,6 +26,7 @@ import {
 
 } from 'react-router-redux';
 import ReduxThunk from 'redux-thunk';
+import allReducers from './reducers/index';
 
 
 import App from './containers/wrapper/app';
