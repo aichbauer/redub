@@ -28,7 +28,7 @@ import {
 import ReduxThunk from 'redux-thunk';
 
 
-import App from './components/wrapper/app';
+import App from './containers/wrapper/app';
 
 
 const routingMiddleware = routerMiddleware(hashHistory);
