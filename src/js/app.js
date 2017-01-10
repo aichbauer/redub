@@ -31,6 +31,8 @@ import allReducers from './reducers/index';
 
 import App from './containers/wrapper/app';
 
+import index from './views/index/index';
+
 
 const routingMiddleware = routerMiddleware(hashHistory);
 const store = createStore(allReducers, applyMiddleware(ReduxThunk, routingMiddleware));
@@ -42,7 +44,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={App}>
-      
+        <IndexRoute component={index} />
       </Route>
     </Router>
   </Provider>,
