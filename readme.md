@@ -33,6 +33,12 @@ $ npm run dev
 $ npm run start
 ```
 
+## redux devtools
+
+Simply install [redux devtools extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) for chrome and use all the features for debugging the application's state changes.
+
+Devtools only work in development.
+
 ## Folder Structure
 ```
 .
