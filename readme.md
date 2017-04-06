@@ -16,7 +16,6 @@ $ redub new testProject
 $ redub generate comp myNewComponent
 ```
 
-
 Documentation for redub-cli [click here](https://github.com/rudolfsonjunior/redub-cli/readme.md)
 
 ## install & use
@@ -80,7 +79,7 @@ It holdes the following files & folders:
 Inside here all the configurations are set.
 
 It holds the following files & folders:
-* **apiRoutes.js:** this file configures the url-path to the api
+* **apiRoutes.js:** this file configures the url-path to the api (`default`: for development)
 
 ## js directory
 
@@ -93,13 +92,6 @@ It holds the following files & folders:
 * **reducers:** the complete statemanagement for the redux application
 * **views:** the different views that are displayed to the user. Can consist of multiple components and/or containers
 * **app.js:** the entrypoint for the application
-
-## scss directory
-
-Inside here is all the scss code for the redux application.
-
-It holdes the following files & folders:
-* **style.scss:** the scss code for the redux application
 
 ## index.html
 
