@@ -1,25 +1,13 @@
-import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import React from 'react';
 
-require('../../../scss/style.scss');
+const App = (props) => (
+  <div>
+    {props.children}
+  </div>
+);
 
-
-class App extends Component {
-
-  render() {
-
-    return (
-
-      <div>
-        {this.props.children}
-      </div>
-
-    );
-
-  }
-
+App.propTypes = {
+  children: React.PropTypes.element.isRequired,
 };
-
 
 export default App;
