@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rudolfsonjunior/redub.git"
+    "url": "git+https://github.com/aichbauer/redub.git"
   },
-  "author": "Lukas Aichbauer",
+  "author": "Lukas Aichbauer <l.aichbauer@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rudolfsonjunior/redub/issues"
+    "url": "https://github.com/aichbauer/redub/issues"
   },
-  "homepage": "https://github.com/rudolfsonjunior/redub#readme",
+  "homepage": "https://github.com/aichbauer/redub#readme",
   "dependencies": {
     "axios": "^0.15.3",
     "babel-polyfill": "^6.20.0",
